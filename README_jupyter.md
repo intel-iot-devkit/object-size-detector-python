@@ -24,7 +24,7 @@ This object size detector application is one of a series of computer vision (CV)
     ```
     uname -a
     ```
-* Intel® Distribution of OpenVINO™ toolkit 2018 R5 release toolkit
+* Intel® Distribution of OpenVINO™ toolkit 2019 R1 release toolkit
 * Jupyter* notebook v5.7.0
 
 ## How it works
@@ -85,7 +85,7 @@ mosquitto_sub -h localhost -t defects/counter
 
 Open a new terminal. Configure the environment to use the Intel® Distribution of OpenVINO™ toolkit once per session by running the **source** command on the command line:
 ```
-source /opt/intel/computer_vision_sdk_2018.5.445/bin/setupvars.sh -pyver 3.5
+source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
 ```
 
 Go to object-size-detector-python directory
