@@ -1,0 +1,8 @@
+{
+
+    "inputs": [
+	    {
+            "video": "../resources/bolt-multi-size-detection.mp4"
+        }
+    ]
+}
