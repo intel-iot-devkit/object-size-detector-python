@@ -30,4 +30,4 @@ sudo pip3 install jupyter
 
 #Download the video
 cd resources
-wget -O bolt-multi-size-detection.mp4 https://github.com/intel-iot-devkit/sample-videos/blob/master/bolt-multi-size-detection.mp4
+wget -O bolt-multi-size-detection.mp4 https://github.com/intel-iot-devkit/sample-videos/raw/master/bolt-multi-size-detection.mp4

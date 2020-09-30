@@ -2,8 +2,8 @@
 
 | Details            |              |
 |-----------------------|---------------|
-| Target OS:            |  Ubuntu\* 16.04 LTS   |
-| Programming Language: |  Python* 3.5 |
+| Target OS:            |  Ubuntu\* 18.04 LTS   |
+| Programming Language: |  Python* 3.6 |
 | Time to Complete:     |  45 min     |
 
 ![Defect](./docs/images/defect.png)
@@ -17,14 +17,14 @@ This application demonstrates how to use CV to detect and measure the approximat
 * 6th to 8th generation Intel® Core™ processor with Iris® Pro graphics or Intel® HD Graphics
 
 ### Software
-* [Ubuntu\* 16.04 LTS](http://releases.ubuntu.com/16.04/)<br>
+* [Ubuntu\* 18.04 LTS](http://releases.ubuntu.com/18.04/)<br>
    NOTE: Use kernel versions 4.14+ with this software.<br> 
     Determine the kernel version with the below uname command. 
     ```
     uname -a
     ```
   
-* Intel® Distribution of OpenVINO™ toolkit 2019 R2 release toolkit
+* Intel® Distribution of OpenVINO™ toolkit 2020 R3 release toolkit
 
 ## How It works
 
@@ -119,7 +119,7 @@ For example, if the output of above command is /dev/video0, then config.json wou
 
 Configure the environment to use the Intel® Distribution of OpenVINO™ toolkit once per session by running the **source** command on the command line:
 ```
-source /opt/intel/openvino/bin/setupvars.sh -pyver 3.5
+source /opt/intel/openvino/bin/setupvars.sh
 ```
 __Note__: This command needs to be executed only once in the terminal where the application will be executed. If the terminal is closed, the command needs to be executed again.
 
@@ -132,20 +132,20 @@ cd <path-to-object-size-detector-python>/application
 
 To see a list of the various options, invoke the help output of this application with the help parameter:
 ```
-python3.5 object_size_detector.py -h
+python3 object_size_detector.py -h
 ```
 
 Run the application using the below command if field of view and distance between the object and camera in millimeters are not known. 
 
 Using input as videofile:
 ```
-python3.5 object_size_detector.py -minl=228 -minw=28 -maxl=250 -maxw=45
+python3 object_size_detector.py -minl=228 -minw=28 -maxl=250 -maxw=45
 ``` 
 Run the application using the below command if field of view and distance between the object and camera in millimeters are known. 
 
 Using input as videofile:
 ```
-python3.5 object_size_detector.py -minl=228 -minw=28 -maxl=250 -maxw=45 -fv=60 -d=370
+python3 object_size_detector.py -minl=228 -minw=28 -maxl=250 -maxw=45 -fv=60 -d=370
 ``` 
 **Note:**<br>
 User can get field of view from camera specifications. The minl, minw, maxl and maxw parameters set the values for the minimum and maximum values for length and width. If a part’s length and width is not within this range, the application issues an alert.
